@@ -1,0 +1,90 @@
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    color: #FF9999;
+    text-align: center;
+    font-size: 3em;
+    background: #1F2937;
+    height: 80px;
+    padding-top: 25px;
+}
+
+body,
+h1{
+    background-color: #ADD8E6;
+    margin: 0;
+    padding: 0;
+}
+
+.game-info{
+    font-size: 2em;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.item{
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.scoreP{
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 2em;
+    width: 280px;
+    text-align: center;
+}
+.scoreC{
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 2em;
+    width: 280px;
+    text-align: center;
+}
+
+.container3{
+    background-color: #FF9999;
+    height: 250px;
+}
+
+.container img{
+    height: 200px;
+    width: auto;
+}
+
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}  
+
+#playerChoice, #computerChoice{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+}
+
+
+#result{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
