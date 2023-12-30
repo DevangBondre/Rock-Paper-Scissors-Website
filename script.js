@@ -31,7 +31,7 @@ function gameRound(){
             computerRoundWin++;
             console.log("Sorry, you lost this round! Computer won!");
         }
-    }
+    }   
 
     if(playerRoundWin === 3){
         return "Congratulations You won 3 rounds first ! You won the game!";
