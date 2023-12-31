@@ -64,7 +64,7 @@ function playRound(e){
 
 
 function computerPlay(){
-    const computerChoice = ("ROCK","PAPER","SCISSORS")
+    const computerChoice = ["ROCK","PAPER","SCISSORS"]
     const randomMove = Math.floor(Math.random() * computerChoice.length);
     return computerChoice[randomMove];
 }
