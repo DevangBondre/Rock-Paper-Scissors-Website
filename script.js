@@ -3,6 +3,10 @@ const buttons = document.querySelectorAll(".btn")
 const playerChoice = document.getElementById("playerChoice")
 const computerChoice = document.getElementById("computerChoice")
 const result = document.getElementById("result")
+const popup = document.getElementById("playAgainPopup")
+const popupText = document.getElementById("popupText");
+const openModalButtons =document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
 let playerScore = 0;
 let computerScore = 0;
@@ -60,7 +64,7 @@ function playRound(e){
 
 
 function computerPlay(){
-    let computerChoice = (0,1,2)
+    let computerChoice = ("ROCK","PAPER","SCISSORS")
     let randomMove = Math.floor(Math.random() * computerChoice.length);
     if(randomMove === 0 ){
       return "ROCK"
@@ -78,15 +82,14 @@ function updateScores() {
     document.querySelector(".scoreP").textContent = "Player Score : " + playerScore;
     document.querySelector(".scoreC").textContent = "Computer Score : " + computerScore;
   }
-  function endGame() {
-    if (playerScore === 3) {
-      result.textContent = "Congratulations! You won the game!";
-    } else {
-      result.textContent = "Oops! Computer won the game!";
-    }
-}
+
 
 function endGame(){
-  
+
 }
+  
+
+
+
+
 
