@@ -11,6 +11,7 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]')
 let playerScore = 0;
 let computerScore = 0;
 
+
 buttons.forEach((button) =>{
 console.log("Button click event added");
 button.addEventListener('click',playRound)
@@ -21,7 +22,7 @@ function playRound(e){
 
   console.log("Play round called");
   const playerMove = this.id;
-  const computerMove = computerPlay()
+  const computerMove = computerPlay();
 
 
   console.log("Player move:", playerMove);
@@ -64,18 +65,21 @@ function playRound(e){
 
 
 function computerPlay(){
-    let computerChoice = ("ROCK","PAPER","SCISSORS")
-    let randomMove = Math.floor(Math.random() * computerChoice.length);
-    if(randomMove === 0 ){
-      return "ROCK"
+    
+    let computerChoice = Math.floor(Math.random() * 3) +1 ;
+   
+    switch(computerChoice){
+      case 1:
+      computer = "ROCK"
+      break
+      case 2:
+      computer = "PAPER"
+      break
+      case 3:
+      computer = "SCISSORS"
+      break
     }
-    else if(randomMove === 1){
-      return "PAPER"
-    }
-    else{
-      return "SCISSORS"
-    }
-
+     return computer;
 }
 
 function updateScores() {
