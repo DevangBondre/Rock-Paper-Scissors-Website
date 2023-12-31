@@ -21,7 +21,7 @@ function playRound(e){
 
   console.log("Play round called");
   const playerMove = this.id;
-  const computerMove = computerPlay();
+  const computerMove = computerPlay()
 
 
   console.log("Player move:", playerMove);
@@ -64,9 +64,18 @@ function playRound(e){
 
 
 function computerPlay(){
-    const computerChoice = ["ROCK","PAPER","SCISSORS"]
-    const randomMove = Math.floor(Math.random() * computerChoice.length);
-    return computerChoice[randomMove];
+    let computerChoice = ("ROCK","PAPER","SCISSORS")
+    let randomMove = Math.floor(Math.random() * computerChoice.length);
+    if(randomMove === 0 ){
+      return "ROCK"
+    }
+    else if(randomMove === 1){
+      return "PAPER"
+    }
+    else{
+      return "SCISSORS"
+    }
+
 }
 
 function updateScores() {
