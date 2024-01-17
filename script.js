@@ -43,7 +43,7 @@ function playRound(e){
     (playerMove === "scissors" && (computerMove === "PAPER")) 
     ){
         playerChoice.textContent = "You picked : " + playerMove.toUpperCase();
-        computerChoice.textContent = "You picked : " + computerMove 
+        computerChoice.textContent = "Computer picked : " + computerMove 
         result.textContent = "Congratulations You Won The Round ! "
         playerScore++;
         
